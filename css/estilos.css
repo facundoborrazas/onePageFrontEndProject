@@ -1,3 +1,7 @@
+/* Fuente de letra: */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Raíz de colores: */
 :root {
     /* CSS HEX */
     --ucla-blue: #427aa1ff;
@@ -5,4 +9,186 @@
     --fire-engine-red: #c42021ff;
     --night: #0a0a0aff;
     --white: #ffffffff;
+    --grey: #cbc0adff;
+}
+
+/* Estilos generales: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.centrado {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.centrado a {
+    color: var(--night);
+    padding: 0.5rem;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+}
+
+section img {
+    width: 100%;
+}
+
+/* ######################################## Header ######################################## */
+header {
+    padding: 0.5rem 0;
+    background-color: var(--fire-engine-red);
+}
+
+header .centrado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 3rem;
+}
+
+header a {
+    color: var(--night);
+}
+
+header .centrado div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+
+header nav a {
+    border: var(--night);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+}
+
+
+header nav a:hover {
+    background-color: var(--night);
+    color: var(--white);
+}
+
+/* ######################################## Hero Section ######################################## */
+#heroSection {
+    background: var(--grey) url(/img/HeroSection.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    height: 40rem;
+    padding: 10rem 0;
+    /* ########################################################### */
+    display: flex;
+}
+
+#heroSection .centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--white);
+}
+
+#heroSection .centrado p{
+    font-size: 1.5rem;
+}
+
+#heroSection .centrado a {
+    margin-top: 2rem;
+    border: 1px solid var(--night);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+#heroSection a:hover {
+    background-color: var(--night);
+    color: var(--white);
+}
+
+/* ######################################## Section1 ######################################## */
+#section1 {
+    background-color: var(--night);
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#section1 h2 {
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+#section1 .centrado {
+    display: flex;
+    gap: 2rem;
+}
+
+#section1 .centrado article {
+    display: flex;
+    flex-direction: column;
+}
+
+#section1 .centrado h3{
+    margin-top: 0.75rem;
+}
+
+
+#section1 .centrado p{
+    margin-top: 0.5rem;
+}
+
+#section1 .centrado img {
+    height: 20rem;
+    object-fit: cover;
+}
+
+#section1 .centrado a {
+    margin-top: 2rem;
+    border: 1px solid var(--night);
+    border-radius: 0.75rem;
+    font-size: 1rem;
+}
+
+#section1 a:hover {
+    background-color: var(--night);
+    color: var(--white);
+}
+
+#section1 .centrado article div {
+    background-color: var(--fire-engine-red);
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    align-items: flex-start;
+    text-align: start;
 }

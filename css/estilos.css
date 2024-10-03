@@ -4,7 +4,8 @@
 /* Raíz de colores: */
 :root {
     /* CSS HEX */
-    --ucla-blue: #427aa1ff;
+    --shamrock-green: #4c9f70ff;
+    --cerulean: #077187ff;
     --school-bus-yellow: #f1d302ff;
     --fire-engine-red: #c42021ff;
     --night: #0a0a0aff;
@@ -38,9 +39,10 @@ ul {
 .centrado {
     margin: 0 auto;
     width: 70%;
+    min-width: 1200px;
 }
 
-.centrado a {
+.btn {
     color: var(--night);
     padding: 0.5rem;
     font-weight: 400;
@@ -119,7 +121,7 @@ header nav a:hover {
     color: var(--white);
 }
 
-#heroSection .centrado p{
+#heroSection .centrado p {
     font-size: 1.5rem;
 }
 
@@ -156,14 +158,15 @@ header nav a:hover {
 #section1 .centrado article {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
-#section1 .centrado h3{
+#section1 .centrado h3 {
     margin-top: 0.75rem;
 }
 
 
-#section1 .centrado p{
+#section1 .centrado p {
     margin-top: 0.5rem;
 }
 
@@ -191,4 +194,181 @@ header nav a:hover {
     padding: 0.75rem;
     align-items: flex-start;
     text-align: start;
+}
+
+/* ######################################## Section2 ######################################## */
+#section2 {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, var(--night) 0%, var(--cerulean) 100%);
+    color: var(--white);
+    padding: 3rem 0;
+}
+
+#section2 h2 {
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#section2 h3 {
+    font-size: 1.5rem;
+}
+
+#section2 p {
+    text-align: center;
+}
+
+#section2 .centrado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+#section2 .centrado article {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    background-color: var(--cerulean);
+    padding: 2rem;
+    border: 1px solid var(--grey);
+    border-radius: 1rem;
+    flex: 1;
+}
+
+#section2 .centrado article p {
+    text-align: start;
+}
+
+#section2 .centrado article span {
+    font-size: 2.8rem;
+}
+
+#section2 .centrado article ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+#section2 .centrado article a {
+    background-color: var(--night);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s ease-out;
+}
+
+#section2 .centrado article a:hover {
+    background-color: var(--grey);
+    color: var(--night);
+    font-size: 1.2rem;
+}
+
+/* ######################################## Section3 ######################################## */
+#section3 {
+    background: rgb(76, 159, 112);
+    background: linear-gradient(0deg, rgba(76, 159, 112, 1) 50%, rgba(7, 113, 135, 1) 100%);
+}
+
+/* ######################################## Section4 ######################################## */
+#section4 {
+    background: rgb(241, 211, 2);
+    background: linear-gradient(0deg, rgba(241, 211, 2, 1) 0%, rgba(76, 159, 112, 1) 100%);
+}
+
+#section4 h2 {
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#section4 p {
+    text-align: center;
+}
+
+#section4 .centrado {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+#section4 .centrado .proximosViajes {
+    display: flex;
+}
+
+#section4 .centrado .proximosViajes article {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#section4 .centrado .proximosViajes article table {
+    background-color: var(--shamrock-green);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+#section4 .centrado .proximosViajes article table thead {
+    text-transform: uppercase;
+}
+
+#section4 .centrado .proximosViajes article table thead tr {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+#section4 .centrado .proximosViajes article table thead tr th {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+#section4 .centrado .proximosViajes article table tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+#section4 .centrado .proximosViajes article table tbody tr {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+#section4 .centrado .proximosViajes article table tbody tr td {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 0 -2rem;
+}
+
+/* ######################################## Footer ######################################## */
+footer {
+    padding: 0.5rem 0;
+    background-color: var(--school-bus-yellow);
+}
+
+footer .centrado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 3rem;
+}
+
+footer a {
+    color: var(--night);
+}
+
+footer .centrado div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

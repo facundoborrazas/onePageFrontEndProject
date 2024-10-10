@@ -53,7 +53,7 @@
         <div class="centrado">
             <article>
                 <figure>
-                    <img src="img/Saturno_1.jpg" alt="">
+                    <img src="img/Saturno_1.jpg" alt="Planeta Saturno">
                 </figure>
                 <div>
                     <h3>Saturno</h3>
@@ -64,7 +64,7 @@
             </article>
             <article>
                 <figure>
-                    <img src="img/Jupiter_1.jpg" alt="">
+                    <img src="img/Jupiter_1.jpg" alt="Planeta Jupiter">
                 </figure>
                 <div>
                     <h3>Jupiter</h3>
@@ -75,7 +75,7 @@
             </article>
             <article>
                 <figure>
-                    <img src="img/Kepler-442b_1.webp" alt="">
+                    <img src="img/Kepler-442b_1.webp" alt="Planeta Kepler-442b">
                 </figure>
                 <div>
                     <h3>Kepler-442b</h3>
@@ -126,44 +126,40 @@
     </section>
 
     <!-- Seccion 3 -->
-    <!-- <section id="section3">
-        <h2>Viajes turísticos por el universo</h2>
+     <section id="section3">
         <div class="centrado">
+            <div>
+                <h2>Galería de imagenes</h2>
+            </div>
+           <div class="grid">
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="img/Mujer_astronauta.jpg" alt="Mujer Astronauta">
                 </figure>
-                <div>
-                    <h3>Saturno</h3>
-                    <p>Saturno es el sexto planeta del Sistema Solar, famoso por sus impresionantes anillos de hielo y
-                        roca. Es un gigante gaseoso compuesto principalmente de hidrógeno</p>
-                    <a href="" class="btn">Visitar</a>
-                </div>
             </article>
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="img/Astronauta_Bosque.jpg" alt="Astronauta en el Bosque">
                 </figure>
-                <div>
-                    <h3>Jupiter</h3>
-                    <p>Júpiter es el planeta más grande del Sistema Solar, un gigante gaseoso compuesto de hidrógeno y
-                        helio, con una Gran Mancha Roja y más de 70 lunas.</p>
-                    <a href="" class="btn">Visitar</a>
-                </div>
             </article>
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="img/Astronautas_caminando (2).jpg" alt="Astronautas caminando">
                 </figure>
-                <div>
-                    <h3>Kepler-442b</h3>
-                    <p>Kepler-442b es un exoplaneta rocoso ubicado a 1,200 años luz, potencialmente habitable, orbitando
-                        una estrella enana naranja en la constelación de Lyra.</p>
-                    <a href="" class="btn">Visitar</a>
-                </div>
             </article>
+            <article>
+                <figure>
+                    <img src="img/Mujer_Astronauta (3).jpg" alt="Traje Astronauta">
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <img src="img/Astronauta_cueva (2).jpg" alt="Astronauta en una cueva">
+                </figure>
+            </article>
+           </div>
         </div>
-    </section> -->
+    </section> 
 
     <!-- Seccion 4 -->
     <section id="section4">
@@ -191,7 +187,7 @@
                             <option value="kepler">Kepler-442b</option>
                         </select>
                         <label for="fecha">Fecha</label>
-                        <input type="date" id="fecha" placeholder="Fecha">
+                        <input type="date" id="fecha">
                         <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje"></textarea>
                         <input type="checkbox" id="check" value="Quiero recibir promociones">
@@ -201,9 +197,11 @@
                 <article id="tablaDestinos">
                     <table>
                         <thead>
-                            <th>Destino</th>
-                            <th>Fecha</th>
-                            <th>Hora</th>
+                            <tr>
+                                <th>Destino</th>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -239,6 +237,11 @@
                             <tr>
                                 <td>Kepler-442b</td>
                                 <td>2027-01-12</td>
+                                <td>05:30 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Marte</td>
+                                <td>2028-03-12</td>
                                 <td>05:30 PM</td>
                             </tr>
                         </tbody>
